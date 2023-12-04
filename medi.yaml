@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: medilab
-        image: yrr03/medilab:TAG
+        image: yrr03/medilab:1
         ports:
         - containerPort: 8080
 ---
