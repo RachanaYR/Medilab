@@ -1,2 +1,2 @@
-FROM tomcat:9.0.82-jdk8-corretto-al2
+FROM tomcat:8.0.18-jre8
 COPY target/*.war /usr/local/tomcat/webapps/Medilab.war
