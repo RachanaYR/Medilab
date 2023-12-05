@@ -7,7 +7,10 @@ spec:
   replicas: 2
   revisionHistoryLimit: 5
   strategy:
-    type: Recreate
+    type: RollingUpdate
+    rollingUpdate: 
+      maxUnavialable: 50%
+      maxSurge: 50%
   selector:
     matchLabels:
       app: medilab
